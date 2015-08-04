@@ -8,7 +8,7 @@ I'm using Dnsimple (https://dnsimple.com) because they have an API that works ve
 
 I made a Shell Script with requests to the API us "curl". But I decided to make one in Node.js.
 
-I could have used the library request (https://github.com/request/request) to use the API but I found this module https://github.com/fvdm/nodejs-dnsimple that works very well.
+I could have used the library request (https://github.com/request/request) to use the API but I found this module https://github.com/fvdm/nodejs-dnsimple is fine.
 
 ## Testing
 

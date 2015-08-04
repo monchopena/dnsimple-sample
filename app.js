@@ -31,6 +31,7 @@ var update=0;
 
 //A CronJob every minute
 new CronJob('00 * * * * *', function() {
+
 	now = new Date();
   console.log('You will see this message every minute - '+now);
 
