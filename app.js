@@ -98,7 +98,7 @@ new CronJob('00 * * * * *', function() {
 				} else {
 					console.log ('Record \'%s\' update for %s', data.record.name, data.record.domain_id);
 					next();
-			  }
+				}
 			});
 		} else {
 			next();
