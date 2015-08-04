@@ -36,3 +36,7 @@ node_modules
 ehthumbs.db
 Thumbs.db
 
+# Others
+log.txt
+ip.txt
+config.js

@@ -1,0 +1,31 @@
+{
+  "name": "dnsimple-sample",
+  "version": "1.0.0",
+  "description": "An example of an IP update a register of Dnsimple.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dnsimple": "",
+    "async": "",
+    "request": "",
+    "cron": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monchopena/dnsimple-sample.git"
+  },
+  "keywords": [
+    "dnsimple",
+    "update",
+    "record",
+    "sample"
+  ],
+  "author": "Moncho Pena",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/monchopena/dnsimple-sample/issues"
+  },
+  "homepage": "https://github.com/monchopena/dnsimple-sample#readme"
+}
