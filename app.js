@@ -8,8 +8,6 @@ Moncho Pena
 
 var config=require('./config.js');
 
-console.log(config.domainToken);
-
 //Dependences
 var async = require('async');
 var request = require('request');

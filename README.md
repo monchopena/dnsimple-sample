@@ -6,9 +6,9 @@ An example how to update a register (IP) in Dnsimple.com
 
 I'm using Dnsimple (https://dnsimple.com) because they have an API that works very well.
 
-I made a Shell Script with requests to the API us "curl". But I decided to make one in Node.js.
+I made a Shell Script with requests to the API using "curl". But I decided to make one in Node.js.
 
-I could have used the library request (https://github.com/request/request) to use the API but I found this module https://github.com/fvdm/nodejs-dnsimple is fine.
+I could have used the library request (https://github.com/request/request) to use with the API but I found this module https://github.com/fvdm/nodejs-dnsimple ant it's fine.
 
 ## Testing
 
