@@ -60,14 +60,12 @@ new CronJob('00 * * * * *', function() {
 		  		} else {
 			  		next(err);
 		  		}
-
 	  		}
 		});
 	},
 
 	function(next) {
 		if ( newIP!=='' && ((newIP!==oldIP) || oldIP=='')) {
-
 			fs.writeFile(filename, newIP, function(err) {
 				if (err) {
 					next(err);
@@ -77,47 +75,37 @@ new CronJob('00 * * * * *', function() {
 					next();
 				}
 			});
-
 		} else {
-
 			update=0;
 			console.log('Same IP');
 			next();
-
 		}
-
 	},
 
 	function(next) {
 		if ( update===1 ) {
-
 			console.log('oldIP: '+oldIP);
 			console.log('newIP: '+newIP);
-
 			var input = {
 			  record: {
 			    content: newIP
 			  }
 			};
-
 			//updating
 			dnsimple ('PUT', '/domains/'+domain+'/records/'+record_id, input, function (err, data) {
-			  if (err) {
-				  next(err);
+				if (err) {
+					next(err);
 				} else {
-				   console.log ('Record \'%s\' update for %s', data.record.name, data.record.domain_id);
-				   next();
+					console.log ('Record \'%s\' update for %s', data.record.name, data.record.domain_id);
+				  next();
 			  }
 			});
-
 		} else {
 			next();
 		}
-
 	}
 
 	], function(err) {
-
 		if (err) {
 			fs.appendFile('log.txt', err+'\n', function () {
 			 console.log('Error!');
@@ -125,7 +113,6 @@ new CronJob('00 * * * * *', function() {
 		} else {
 			console.log('Ok');
 		}
-
 	}
 );
 
